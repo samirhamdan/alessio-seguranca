@@ -264,6 +264,25 @@ footer{background:var(--white);border-top:1px solid var(--ice);padding:3rem 2rem
   </div>
 </footer>
 
-<script>window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50)});</script>
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50)
+});
+</script>
+
+<script>
+document.querySelectorAll('a[href*="wa.me"]').forEach(function(btn){
+
+  btn.addEventListener('click', function(){
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17791748296/K4LrCJ3khbQcEMiR4qNC'
+    });
+
+  });
+
+});
+</script>
+
 </body>
 </html>
